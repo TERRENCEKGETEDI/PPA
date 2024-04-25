@@ -22,19 +22,19 @@ center button{
 }
 center button:nth-child(1){
     background-image: linear-gradient(to right,black, blue,black);
-    box-shadow: 0 0 5px black, 0 0 25px red,0 0 20px black, 0 0 200px red;
+    box-shadow: 0 0 5px black, 0 0 25px blue,0 0 20px black, 0 0 200px blue;
     border-radius: 30px;
     font-weight: bolder;
 }
 center button:nth-child(2){
     background-image: linear-gradient(to right,black, green,black);
-    box-shadow: 0 0 5px black, 0 0 25px red,0 0 20px black, 0 0 200px red;
+    box-shadow: 0 0 5px black, 0 0 25px green,0 0 20px black, 0 0 200px green;
     border-radius: 30px;
     font-weight: bolder;
 }
 center button:nth-child(3){
     background-image: linear-gradient(to right,black, purple,black);
-    box-shadow: 0 0 5px black, 0 0 25px red,0 0 20px black, 0 0 200px red;
+    box-shadow: 0 0 5px black, 0 0 25px purple,0 0 20px black, 0 0 200px purple;
     border-radius: 30px;
     font-weight: bolder;
 }
