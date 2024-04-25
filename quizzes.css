@@ -22,9 +22,15 @@ center button{
 }
 .Question{
     background-image: linear-gradient(rgba(102, 21, 21,.4),rgba(10, 10, 75,1));
+    height: fit-content;
+    width: 100%;
+    color: white;
 }
 .Question h1:nth-child(3){
     color: red;
+}
+.space{
+    height: 20vh;
 }
 center button:nth-child(1){
     background-image: linear-gradient(to right,black, blue,black);
@@ -50,6 +56,14 @@ center button:nth-child(4){
     border-radius: 30px;
     font-weight: bolder;
 }
+/* @media only screen and (max-height: 600px){
+    footer{
+        display: none;
+    }
+    .space{
+        height: 100vh;
+    }
+} */
 footer{
     margin-top: 100vh;
 }
