@@ -50,3 +50,8 @@ center button:nth-child(4){
     border-radius: 30px;
     font-weight: bolder;
 }
+@media only screen and (max-height: 700px)  {
+    .space{
+        height: 50vh;
+    }    
+}
