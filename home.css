@@ -16,16 +16,16 @@ html{
 }
 
 
-.bottom-buttons {
+.bottom-buttons{
     position: fixed;
     bottom: 0;
-    left: 0;
     width: 100%;
     padding: 10px;
     display: flex;
-    justify-content: center;
     background-color: black;
+    overflow-x: scroll;
 }
+
 .bottom-buttons button:hover{
     background-image: linear-gradient(to right, black, gold,black);
     border-width: 5px;
