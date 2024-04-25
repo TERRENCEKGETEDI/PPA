@@ -42,6 +42,13 @@ html{
     cursor: pointer;
     color: darkblue;
 }
+.bottom-buttons button:nth-child(3){
+    background-image: linear-gradient(to right, black, gold,black);
+    border-width: 5px;
+    padding: 5px 13px;
+    color: white;
+    font-weight: bolder;
+}
 body div:nth-child(1) h1{
     text-align: center;
 }
