@@ -3,6 +3,7 @@
     margin: 0;
 }
 html{
+    background-color: black;
     background-image: url("IMG-20240412-WA0060.jpg");
     background-repeat: no-repeat;
     background-position: center;
