@@ -27,6 +27,12 @@ label {
     display: flex;
     margin: auto;
 }
+#submit:hover{
+    background-image: linear-gradient(to right,black, red,black);
+    box-shadow: 0 0 5px black, 0 0 25px red,0 0 20px black, 0 0 200px red;
+    border-radius: 30px;
+    font-weight: bolder;
+}
 h1{
     font-size: 25px;
 }
