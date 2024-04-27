@@ -27,6 +27,7 @@ center button{
     width: fit-content;
     color: white;
     padding: 3%;
+    margin: auto;
 }
 .Question h1:nth-child(3){
     color: red;
