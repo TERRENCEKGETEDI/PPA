@@ -27,3 +27,54 @@ function quizzes(){
 function videos(){
     window.location.href = "videos.html";
 }
+// #1
+function correction1(){
+    let correct1 = document.getElementById("correct1");
+    let hide1 = document.getElementById("hide1");
+    let view1 = document.getElementById("view1");
+    correct1.style.display="block";
+    hide1.style.display="block";
+    view1.style.display="none";
+}
+function correction11(){
+    let correct1 = document.getElementById("correct1");
+    let hide1 = document.getElementById("hide1");
+    let view1 = document.getElementById("view1");
+    correct1.style.display="none";
+    hide1.style.display="none";
+    view1.style.display="block";
+}
+// #2
+function correction2(){
+    let correct1 = document.getElementById("correct2");
+    let hide1 = document.getElementById("hide2");
+    let view1 = document.getElementById("view2");
+    correct1.style.display="block";
+    hide1.style.display="block";
+    view1.style.display="none";
+}
+function correction12(){
+    let correct1 = document.getElementById("correct2");
+    let hide1 = document.getElementById("hide2");
+    let view1 = document.getElementById("view2");
+    correct1.style.display="none";
+    hide1.style.display="none";
+    view1.style.display="block";
+}
+// #3
+function correction3(){
+    let correct1 = document.getElementById("correct3");
+    let hide1 = document.getElementById("hide3");
+    let view1 = document.getElementById("view3");
+    correct1.style.display="block";
+    hide1.style.display="block";
+    view1.style.display="none";
+}
+function correction13(){
+    let correct1 = document.getElementById("correct3");
+    let hide1 = document.getElementById("hide3");
+    let view1 = document.getElementById("view3");
+    correct1.style.display="none";
+    hide1.style.display="none";
+    view1.style.display="block";
+}
