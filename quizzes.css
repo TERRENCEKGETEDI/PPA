@@ -67,3 +67,40 @@ center button:nth-child(4){
 footer{
     margin-top: 100vh;
 }
+.view{
+    background-image: linear-gradient(to right,black, red,black);
+    box-shadow: 0 0 5px black, 0 0 25px red,0 0 20px black, 0 0 200px red;
+    border-radius: 30px;
+    font-weight: bolder;
+}
+.hide{
+    background-image: linear-gradient(to right,black, blue,black);
+    box-shadow: 0 0 5px black, 0 0 25px blue,0 0 20px black, 0 0 200px blue;
+    border-radius: 30px;
+    font-weight: bolder;
+}
+/* #1 */
+#correct1{
+    display: none;
+}
+#hide1{
+    display: none;
+}
+/* #2 */
+#correct2{
+    display: none;
+}
+#hide2{
+    display: none;
+}
+/* #3 */
+#correct3{
+    display: none;
+}
+#hide3{
+    display: none;
+}
+pre{
+    font-size: 1rem;
+    text-align: left;
+}
