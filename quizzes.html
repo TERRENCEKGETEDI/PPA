@@ -26,36 +26,131 @@
             <h2>Write a program that will allow the user to enter their name, surname, course name, current year, age. And display the results. 
                 Make sentence using the variables. Will post results later.</h2>
             <h1>NOTE : the inputs should be in that order, avoid using any AI, youTube and or websites</h1>
+            <button id="view1" onclick="correction1()" class="view">view</button>
+            <pre id="correct1">
+import java.util.Scanner;
+public class correction
+{
+	public static void main(String[]args)
+	{
+		Scanner sc = new Scanner(System.in);
+		
+		//Declare variables
+		String sName, sSurname, sCourseName;
+		int iCurrentYear, iAge;
+		
+		//Inputs
+		System.out.print("Enter your name :");
+		sName = sc.next();
+		System.out.print("Enter your surname :");
+		sSurname = sc.next();
+		System.out.print("Enter your course name :");
+		sc.nextLine(); //Clear the buffer
+		sCourseName = sc.nextLine();
+		System.out.print("Enter the current year :");
+		iCurrentYear = sc.nextInt();
+		System.out.print("Enter your age :");
+		iAge = sc.nextInt();
+		
+		//Outputs
+		System.out.println("Hello "+ sName +" "+sSurname);
+		System.out.println("Your are "+iAge+" years old in "+ iCurrentYear);
+		System.out.println("You are studying "+sCourseName);
+	}
+}
+            </pre>
+            <button id="hide1" onclick="correction11()" class="hide">hide</button>
         </center><br>
         <center class="Question">
             <h1>Question 2</h1>
             <h2>Write a program that will calculate your age and display results</h2>
+            <button id="view2" onclick="correction2()" class="view">view</button>
+            <pre id="correct2">
+import java.util.Scanner;
+public class AgeCalculation
+{
+	public static void main(String[]args)
+	{
+		Scanner sc = new Scanner(System.in);
+		
+		//Declare variables
+		int iAge, iCurrentYear, iBirthYear;
+		
+		//Inputs
+		System.out.print("Enter your current birth year :");
+		iBirthYear = sc.nextInt();
+		System.out.print("Enter the current :");
+		iCurrentYear = sc.nextInt();
+		
+		//Perform calculations
+		iAge = iCurrentYear - iBirthYear;
+		
+		//Outputs
+		System.out.print("You are "+iAge+" years old.");
+	}
+}
+            </pre>
+            <button id="hide2" onclick="correction12()" class="hide">hide</button>
         </center><br>
         <center class="Question">
             <h1>Question 3</h1>
-            <h2>Wirte a program that will add, subtract, minus and multiply the two number from the user, and display each results on a new line <br>
+            <h2>Wirte a program that will add, subtract, minus and multiply the two number from the user, and display each results on a new line<br>
                 expexted outputs: <br> 4 + 2 = 6 <br>4 - 2 = 2 <br>4 x 2 = 8 <br>4 / 2 = 2
             </h2>
+            <button id="view3" onclick="correction3()" class="view">view</button>
+            <pre id="correct3">
+import java.util.Scanner;
+public class calc
+{
+	public static void main(String[]args)
+	{
+		Scanner sc = new Scanner(System.in);
+		
+		//Declare variables
+		int iNum1, iNum2;
+		int iAdd, iMinus, iMultliply, iDivide;
+		
+		//Inputs
+		System.out.print("Enter the first number :");
+		iNum1 = sc.nextInt();
+		System.out.print("Enter the second number :");
+		iNum2 = sc.nextInt();
+		
+		//Perform calculations
+		iAdd = iNum1 + iNum2;
+		iMinus = iNum1 - iNum2;
+		iMultliply = iNum1 * iNum2;
+		iDivide = iNum1 / iNum2;
+		
+		//Outputs
+		System.out.println(iNum1+" + "+iNum2+" = "+iAdd);
+		System.out.println(iNum1+" - "+iNum2+" = "+iMinus);
+		System.out.println(iNum1+" * "+iNum2+" = "+iMultliply);
+		System.out.println(iNum1+" / "+iNum2+" = "+iDivide); 
+		
+		//NOTE: divide will return a whole number as the program accepts integers only
+	}
+}
+            </pre>
+            <button id="hide3" onclick="correction13()" class="hide">hide</button>
         </center>
     </div>
-    <div style="height: 20vh;"></div>
-    <div>    
-        <footer style="background-color: rgba(157, 204, 219, 0.7); text-align: center;">
-            <h2>2024 &copy All Rights Reserved Designed by Terrence Kgetedi</h2>
-            <p>Email: <a href="mailto:kgetediterrence@gmail.com" style="text-decoration: none; color: white; font-size: x-large;">kgetediterrence@gmail.com</a></p>
-            <p>Phone: <span style="color: white; font-size: x-large;"> +27692957367</span></p>
-            <p>WhatsApp<span style="color: white; font-size: x-large;"> +27692957367</span></p>
-        </footer>
-    </div>
-
-    <br><br><br><br><br>
+    <div class="space" style="margin-bottom: 300vh;"></div>
+    <br><br><br><br>
+    <footer style="background-color: rgba(157, 204, 219, 0.7); text-align: center; margin-top: 100vh;">
+        <h2>2024 &copy All Rights Reserved Designed by Terrence Kgetedi</h2>
+        <p>Email: <a href="mailto:kgetediterrence@gmail.com" style="text-decoration: none; color: white; font-size: x-large;">kgetediterrence@gmail.com</a></p>
+        <p>Phone: <span style="color: white; font-size: x-large;"> +27692957367</span></p>
+        <p>WhatsApp<span style="color: white; font-size: x-large;"> +27692957367</span></p>
+    </footer>
+    <br><br><br><br><br><br>
     <div class="bottom-buttons">
         <button onclick="quizzes()">QUESTIONS</button>
         <button onclick="notes()">NOTES</button>
         <button onclick="home()">HOME</button>
         <button onclick="videos()">VIDEOS</button>
         <button onclick="documents()">DOCUMENTS</button>
-    </div>    
+    </div>   
     <script src="quizzes.js"></script>
 </body>
 </html>
