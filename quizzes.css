@@ -103,7 +103,18 @@ footer{
 #hide3{
     display: none;
 }
+#correct4{
+    display: none;
+}
+#hide4{
+    display: none;
+}
 pre{
     font-size: 1rem;
     text-align: left;
+}
+table,th,td{
+    border: 1px solid;
+    border-collapse: collapse;
+    font-size: 1.5rem;
 }
