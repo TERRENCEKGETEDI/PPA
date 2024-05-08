@@ -41,10 +41,11 @@ public class correction
 		
 		//Inputs
 		System.out.print("Enter your name :");
-		sName = sc.nextLine();
+		sName = sc.next();
 		System.out.print("Enter your surname :");
-		sSurname = sc.nextLine();
+		sSurname = sc.next();
 		System.out.print("Enter your course name :");
+		sc.nextLine(); //Clear the buffer
 		sCourseName = sc.nextLine();
 		System.out.print("Enter the current year :");
 		iCurrentYear = sc.nextInt();
@@ -133,7 +134,50 @@ public class calc
             </pre>
             <button id="hide3" onclick="correction13()" class="hide">hide</button>
         </center>
+
+        <center class="Question">
+        <h1>Question 4</h1>
+        <h2>
+            A school receives two containers of sweets, each containing a certain kilogram of sweets (read the mass of each from the keyboard). How many small packets of sweets of 85g each can be packed using the sweets from both containers? <br>
+            Write an IPO to solve the problem
+        </h2>
+        <button id="view4" onclick="correction4()" class="view" disabled>view</button>
+        <pre id="correct4">
+            <table>
+                <tr>
+                    <th>Input</th>
+                    <th>processing</th>
+                    <th>Output</th>
+                </tr>
+                <tr>
+                    <td>
+//Costants
+PACKET_SIZE = 85
+
+//Inputs
+mass of first container
+(rMassContainer1)
+mass of second container
+(rMassContainer2)
+                    </td>
+                    <td>
+rTotalMass = rMassContainer1 +rMassContainer2
+rMassInGrams = rTotalMass * 1000
+iNumPackets = rMassInGrams / PACKET_SIZE
+                    </td>
+                    <td>
+Number of packets
+(iNumPackets)
+                    </td>
+                </tr>
+            </table>
+            <h2>NOTE mass input is in kilograms and we should convert to grams</h2>
+        </pre>
+        <button id="hide4" onclick="correction14()" class="hide">hide</button>
+        </center>
     </div>
+
+
     <div class="space" style="margin-bottom: 300vh;"></div>
     <br><br><br><br>
     <footer style="background-color: rgba(157, 204, 219, 0.7); text-align: center; margin-top: 100vh;">
