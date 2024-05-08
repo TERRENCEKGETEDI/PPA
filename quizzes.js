@@ -78,3 +78,19 @@ function correction13(){
     hide1.style.display="none";
     view1.style.display="block";
 }
+function correction4(){
+    let correct1 = document.getElementById("correct4");
+    let hide1 = document.getElementById("hide4");
+    let view1 = document.getElementById("view4");
+    correct1.style.display="block";
+    hide1.style.display="block";
+    view1.style.display="none";
+}
+function correction14(){
+    let correct1 = document.getElementById("correct4");
+    let hide1 = document.getElementById("hide4");
+    let view1 = document.getElementById("view4");
+    correct1.style.display="none";
+    hide1.style.display="none";
+    view1.style.display="block";
+}
