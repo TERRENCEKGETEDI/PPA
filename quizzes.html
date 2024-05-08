@@ -141,7 +141,7 @@ public class calc
             A school receives two containers of sweets, each containing a certain kilogram of sweets (read the mass of each from the keyboard). How many small packets of sweets of 85g each can be packed using the sweets from both containers? <br>
             Write an IPO to solve the problem
         </h2>
-        <button id="view4" onclick="correction4()" class="view" disabled>view</button>
+        <button id="view4" onclick="correction4()" class="view">view</button>
         <pre id="correct4">
             <table>
                 <tr>
@@ -166,15 +166,48 @@ rMassInGrams = rTotalMass * 1000
 iNumPackets = rMassInGrams / PACKET_SIZE
                     </td>
                     <td>
+Total mass
+(rTotalMass)
 Number of packets
 (iNumPackets)
                     </td>
                 </tr>
             </table>
+            <h2>
+                When the user clicks the green flag
+
+                    //Constants
+                    PACKET_SIZE = 85
+
+                    //Input 
+                    ask "Enter the mass of the first container"
+                    enter rMassContainer1
+                    ask enter the mass of the second container
+                    enter rMassContainer2
+                    
+                    //processing
+                    rTotalMass = rMassContainer1 +rMassContainer2
+                    rMassInGrams = rTotalMass * 1000
+                    iNumPackets = rMassInGrams / PACKET_SIZE
+
+                    //Output
+                    display "The total mass "+ rTotalMass
+                    display "The number of packets filled "+ iNumPackets
+
+                end
+            </h2>
             <h2>NOTE mass input is in kilograms and we should convert to grams</h2>
         </pre>
         <button id="hide4" onclick="correction14()" class="hide">hide</button>
         </center>
+        <!-- <center class="Question">
+            <h1>Question</h1>
+            <h2>The question</h2>
+            <button id="view[]" onclick="correction[]()" class="view">view</button>
+            <pre id="correct[]">
+                <button id="hide[]" onclick="correction[]()" class="hide">hide</button>
+            </pre>
+        </center> -->
     </div>
 
 
