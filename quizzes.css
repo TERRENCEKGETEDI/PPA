@@ -118,3 +118,10 @@ table,th,td{
     border-collapse: collapse;
     font-size: 1.5rem;
 }
+
+#correct5{
+    display: none;
+}
+#hide5{
+    display: none;
+}
