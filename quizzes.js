@@ -94,3 +94,20 @@ function correction14(){
     hide1.style.display="none";
     view1.style.display="block";
 }
+
+function correction5(){
+    let correct1 = document.getElementById("correct5");
+    let hide1 = document.getElementById("hide5");
+    let view1 = document.getElementById("view5");
+    correct1.style.display="block";
+    hide1.style.display="block";
+    view1.style.display="none";
+}
+function correction15(){
+    let correct1 = document.getElementById("correct5");
+    let hide1 = document.getElementById("hide5");
+    let view1 = document.getElementById("view5");
+    correct1.style.display="none";
+    hide1.style.display="none";
+    view1.style.display="block";
+}
