@@ -209,9 +209,67 @@ Number of packets
                 if the student qualifies show how much he/she must get to pass the module, 50% to qualify</h2>
             <button id="view5" onclick="correction5()" class="view">view</button>
             <pre id="correct5">
-                <h2>To be updated</h2>
-                <button id="hide5" onclick="correction15()" class="hide">hide</button>
+                <h2>
+import java.util.Scanner;
+public class marks
+{//Start class
+	public static void main(String[]args)
+	{//Start main method
+		Scanner kb = new Scanner(System.in);
+		
+		//Constant variables
+		final double ST_PERCERNTAGE = 0.2, CT_PERCENTAGE = 0.1, QUALIFY_MARK = 40;
+		
+		//declare variables
+		int mark1ST,mark2ST,mark3ST,mark1CT,mark2CT,mark3CT,mark4CT;
+		double STtotal,CTtotal, predicate, percentFromExam, STtotalPercentage, CTtotalPercentage;
+		
+		//input
+		System.out.print("Enter your semester test 1 mark :");
+		mark1ST = kb.nextInt();
+		System.out.print("Enter your semester test 2 mark :");
+		mark2ST = kb.nextInt();
+		System.out.print("Enter your semester test 3 mark :");
+		mark3ST = kb.nextInt();
+		System.out.print("Enter your class test test 1 mark :");
+		mark1CT = kb.nextInt();
+		System.out.print("Enter your class test test 2 mark :");
+		mark2CT = kb.nextInt();
+		System.out.print("Enter your class test test 3 mark :");
+		mark3CT = kb.nextInt();
+		System.out.print("Enter your class test test 4 mark :");
+		mark4CT = kb.nextInt();
+		
+		
+		//Processing 
+		STtotal = mark1ST*ST_PERCERNTAGE + mark2ST*ST_PERCERNTAGE + mark3ST*ST_PERCERNTAGE;
+		CTtotal = mark1CT*CT_PERCENTAGE + mark2CT*CT_PERCENTAGE + mark3CT*CT_PERCENTAGE + mark4CT*CT_PERCENTAGE;
+		
+		predicate = CTtotal + STtotal;
+		
+		//Output 
+		//Conditions
+		if(predicate>=40){
+			//calculation for exam minimum exam mark 
+			percentFromExam = 100 - predicate;
+			
+			//Output for qualifying
+			System.out.println("You qualifying with "+predicate+"%");
+			System.out.print("You need "+percentFromExam+"% in order for you to pass the module");
+		}
+		else{
+			
+			//Output for not qualifying
+			System.out.println("You don't qualify!!!");
+			System.out.print("We will meet next year same time, same place, same lecture.");
+		}
+	
+	
+	}//end main method
+}//end class
+                </h2>
             </pre>
+            <button id="hide5" onclick="correction15()" class="hide">hide</button>
         </center>
         <!-- <center class="Question">
             <h1>Question</h1>
