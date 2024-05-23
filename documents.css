@@ -6,7 +6,7 @@ html{
     background-attachment: fixed;
 }
 h1{
-    background-image: linear-gradient(red, yellow);
+    background-image: linear-gradient(yellow, green);
     padding: 1%;
     width: 98%;
     margin-bottom: 1%;
