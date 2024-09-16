@@ -62,7 +62,48 @@ th{
     border-radius: 20px;
     padding: 1%;
 }
-
+.loops{
+    background-color: rgba(255, 255, 0,.4);
+    width: 80%;
+    margin: 1%;
+    border-radius: 20px;
+    padding: 1%;
+}
+.loops h2,.conditional h2,.escape h2,.stringChar h2, .nested h2{
+    font-size: large;
+    margin-left: 5%;
+}
+ol{
+    margin-left: 1%;
+}
+.conditional{
+    background-color: rgba(255, 255, 0,.4);
+    width: 80%;
+    margin: 1%;
+    border-radius: 20px;
+    padding: 1%;
+}
+.escape{
+    background-color: rgba(255, 255, 0,.4);
+    width: 80%;
+    margin: 1%;
+    border-radius: 20px;
+    padding: 1%;
+}
+.stringChar{
+    background-color: rgba(255, 255, 0,.4);
+    width: 80%;
+    margin: 1%;
+    border-radius: 20px;
+    padding: 1%;
+}
+.nested{
+    background-color: rgba(255, 255, 0,.4);
+    width: 80%;
+    margin: 1%;
+    border-radius: 20px;
+    padding: 1%;
+}
 /* Adjust layout for devices with a maximum width of 600px */
 @media only screen and (min-width: 100px) and (max-width: 600px) {
     /* Styles for smaller screens */
