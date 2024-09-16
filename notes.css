@@ -107,7 +107,9 @@ ol{
 /* Adjust layout for devices with a maximum width of 600px */
 @media only screen and (min-width: 100px) and (max-width: 600px) {
     /* Styles for smaller screens */
-    .syntax, .public, .javaStructure, .Algorithm, .IPO, .inputs{
+    .syntax, .public, .javaStructure,
+     .Algorithm, .IPO, .inputs,.nested,.stringChar,
+     .escape,.conditional,.loops{
         width: 100%;
         margin: 0;
         border-radius: 0;
